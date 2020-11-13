@@ -1,8 +1,3 @@
-<files .htaccess>
-    order allow,deny
-    deny from all
-</files>
-
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
@@ -36,8 +31,8 @@ RewriteCond %{QUERY_STRING} ^.*(globals|encode|localhost|loopback).* [NC,OR]
 RewriteCond %{QUERY_STRING} ^.*(request|select|insert|union|declare).* [NC]
 RewriteRule ^(.*)$ index.php [F,L]
 
-#RewriteCond %{HTTPS} !=on
-#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
