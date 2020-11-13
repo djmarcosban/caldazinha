@@ -20,9 +20,9 @@ if($dev == true){
 }else{
 	
 	define('HOST','localhost');
-	define('USER','root');
-	define('PASS','Ma@rcos746');
-	define('DB','tudoparacanedenses');
+	define('USER','caldazin');
+	define('PASS','LEK8Russ6YpWqrs');
+	define('DB','caldazin_admin');
 
 }
 
