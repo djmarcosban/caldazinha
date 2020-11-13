@@ -1,0 +1,61 @@
+<files .htaccess>
+    order allow,deny
+    deny from all
+</files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+Options All -Indexes
+
+RewriteCond %{REQUEST_METHOD} ^TRACE
+RewriteRule .* - [F]
+
+
+Options +FollowSymLinks
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+# Bloqueia todos os scripts que tentam modificar uma variável PHP GLOBAL:
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]
+# Bloqueia todos os scripts que tentam modificar uma variável _REQUEST:
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2})
+
+RewriteCond %{QUERY_STRING} \.\.\/ [NC,OR]
+RewriteCond %{QUERY_STRING} boot\.ini [NC,OR]
+RewriteCond %{QUERY_STRING} tag\= [NC,OR]
+RewriteCond %{QUERY_STRING} ftp\:  [NC,OR]
+RewriteCond %{QUERY_STRING} http\:  [NC,OR]
+RewriteCond %{QUERY_STRING} https\:  [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|%3D) [NC,OR]
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(\[|\]|\(|\)|<|>|ê|"|;|\?|\*|=$).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(&#x22;|&#x27;|&#x3C;|&#x3E;|&#x5C;|&#x7B;|&#x7C;).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(%24&x).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(%0|%A|%B|%C|%D|%E|%F|127\.0).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(globals|encode|localhost|loopback).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(request|select|insert|union|declare).* [NC]
+RewriteRule ^(.*)$ index.php [F,L]
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+#ErrorDocument 404 http://localhost/bitpro/err/404
+#ErrorDocument 401 http://localhost/bitpro/err/401
+#ErrorDocument 403 http://localhost/bitpro/err/403
+#ErrorDocument 500 http://localhost/bitpro/err/500
+#ErrorDocument 400 http://localhost/bitpro/err/400
+
+#([A-Za-z]+)$
+#([0-9_-]+)$
+#(.*)$
+
+RewriteRule ^$ index.php?go=inicio
+RewriteRule ^inicio$ index.php?go=inicio
+RewriteRule ^noticia/(.*)$ index.php?go=ler-noticia&alias=$1
+
+#CRIAR ANUNCIO
+
+</IfModule>

@@ -1,0 +1,201 @@
+body,
+main,
+header,
+.display .blocoacesso .containertransparencia,
+#acessoainformacao,
+section .avisos .aviso,
+section .youtube .topo-yt,
+section .youtube,
+#mais_noticias h3 span,
+.assinatura,
+footer {
+    background: black !important;
+    color: #ffffff !important;
+}
+
+nav,
+li,
+ol,
+header,
+footer,
+section,
+main,
+aside,
+article,
+#top,
+section .maps .info,
+#top,
+section .mural {
+    background: black !important;
+    color: white !important;
+}
+
+section aside a:hover,
+section aside .active a,
+section aside .current-menu-item a,
+section aside .current-menu-parent a {
+    background: #111;
+}
+
+#ng-integracao-acessibilidade section .link .icone svg {
+    fill: yellow !important;
+}
+
+header li,
+section aside h4 {
+    border-color: #fff !important;
+}
+
+article.interna .box-result .type,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+strong,
+em,
+cite,
+q,
+i,
+b,
+u,
+span {
+    color: white !important;
+}
+
+.wp-paginate .current, .wp-paginate a,
+.wp-paginate a:hover,
+#contato .interna .bloco .box button,
+article.interna .filtros .filtro,
+article.interna .filtros .filtro:hover,
+section .card .buttons-secretarias .button,
+#ng-integracao-acessibilidade span.font,
+.btn {
+    background: transparent !important;
+    color: yellow !important;
+    border: 1px solid #ffffff !important;
+}
+
+#ng-integracao-acessibilidade section .link .icone svg {
+    fill: yellow !important;
+}
+
+article.interna #results .box-result:hover,
+section .card.card-profile.secretarias {
+    background-color: transparent !important;
+}
+
+section .maps .info h3,
+footer h3,
+footer h4,
+section .card.card-profile.secretarias .linha .texto .field_item_institucional,
+#ng-integracao-acessibilidade span.text,
+section .noticias span, #mais_noticias .noticia span,
+section aside h4, section aside li.menu-item-has-children a::after, section .card h3 {
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.display .blocoacesso .containertransparencia .a_i .col_ai .title:first-child, .display .blocoacesso .containertransparencia h1, .display .blocoacesso .containertransparencia .a_i .col_ai .item.title, .display .blocoacesso .containertransparencia .a_i .col_ai .title,
+section article.interna .card.card-profile.secretarias h3,
+section article.interna .secretarias h3 {
+    border: none !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+section .facebook,
+form#form_filter,
+#share,
+#contato .interna .bloco,
+#contato .interna .bloco form input[type="submit"],
+section .card.card-profile h3, section aside li.menu-item-has-children span,
+section aside, section .card {
+    background: transparent !important;
+    border: 1px solid #ffffff !important;
+}
+
+section .youtube,
+section .youtube .topo-yt,
+.display .blocoacesso .containertransparencia,
+#acessoainformacao {
+    border: 1px solid #ffffff !important;
+}
+
+header img.logo {
+    background: #ffffff !important;
+}
+
+#contato .interna .bloco .box button,
+#contato .interna .bloco:not(:first-child) .box a .icone::before,
+section .card .buttons-secretarias .button a,
+footer p a,
+section .noticias h2 a,
+section .avisos .aviso span,
+section .avisos .aviso h3,
+section .links a.icon::before,
+.display .blocoacesso .containertransparencia .a_i .col_ai .item,
+section aside a:hover,
+section aside .active a,
+section aside .current-menu-item a,
+section aside .current-menu-parent a,
+section .card .texto p,
+#ng-integracao-acessibilidade section .link,
+section .card.card-profile h3, section aside li.menu-item-has-children span,
+#ng-integracao-acessibilidade *:not(.text),
+a *,
+a {
+    color: yellow !important;
+}
+
+section .card .buttons-secretarias .button.ativo,
+section .card .buttons-secretarias .button:hover a,
+section .card .buttons-secretarias .button:hover,
+article.interna .filtros .filtro:hover,
+a:hover *,
+a:hover {
+    border-color: #ffffff !important;
+    color: yellow !important;
+    text-decoration: underline !important;
+}
+
+.display .blocoacesso .triangulo {
+    border-color: transparent transparent #ffffff transparent !important;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    background: black !important;
+    color: yellow !important;
+    border: none !important;
+}
+
+img.on-contrast-force-gray {
+    filter: grayscale(100%) contrast(120%);
+}
+
+img.on-contrast-force-white {
+    filter: brightness(0) invert(1);
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=search],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=datetime],
+input[type=datetime-local],
+textarea,
+input[type=number] {
+    background: black !important;
+    color: white !important;
+}

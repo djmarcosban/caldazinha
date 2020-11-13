@@ -1,0 +1,367 @@
+/***** Largura *****/
+@media (max-width: 1200px) {
+    section #banners {
+        height: 300px;
+    }
+
+    article.interna #results .box-result .title {
+        font-size: 26px;
+    }
+
+    article.interna #results .box-result .text {
+        font-size: 14px;
+    }
+
+    article.interna #results .box-result .text ~ .posted {
+        font-size: 14px;
+    }
+
+    article.interna #results .box-result .categories .category {
+        line-height: 16px;
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+
+    article.interna h2.titulo span.search-param {
+        font-size: 30px;
+        word-break: break-all;
+    }
+
+    article.interna .filtros .filtro {
+        height: 30px;
+        font-size: 14px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+    }
+
+    .vereadores-posts ul li:nth-child(5n) {
+        margin-right: 38px;
+    }
+}
+
+@media (max-width: 991px) {
+    /*=================CSS DO SIC ===============>>>>>>*/
+    article.interna.sic-portal-page .dir {
+        width: 100%;
+    }
+
+    section .youtube {
+        margin-bottom: 30px;
+    }
+
+    article.interna.sic-portal-page .esq {
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    /*==================FIM SIC=================<<<<<*/
+    article.interna #results .box-result .title {
+        font-size: 22px;
+    }
+
+    article.interna #results .box-result .text {
+        font-size: 13px;
+    }
+
+    article.interna #results .box-result .text ~ .posted {
+        font-size: 12px;
+    }
+
+    article.interna #results .box-result .categories .category {
+        line-height: 16px;
+        font-size: 11px;
+        padding: 2px 11px;
+    }
+
+    article.interna h2.titulo span.search-param {
+        font-size: 25px;
+        word-break: break-all;
+    }
+
+    article.interna .filtros .filtro {
+        height: 28px;
+        font-size: 12px;
+        padding: 12px 14px;
+        margin-bottom: 10px;
+    }
+
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section #banners {
+        height: 200px;
+    }
+
+    section .card.card-profile .texto {
+        padding: 0 !important;
+    }
+
+    section .card.card-profile .texto .field_item {
+        display: unset;
+    }
+
+    section .card.card-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img.logo {
+        max-height: 84px;
+    }
+
+    .pai-img {
+        position: unset;
+        height: auto;
+        padding-right: 0 !important;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .pai-cont-img {
+        position: unset;
+    }
+
+    section .card.card-profile .imagem {
+        margin-right: unset;
+        position: unset;
+    }
+
+    section .avisos .aviso {
+        width: calc(50% - 10px);
+    }
+
+    section .maps .info {
+        left: auto;
+        top: auto;
+        width: 100%;
+        position: relative;
+        transform: none;
+    }
+
+    section .maps {
+        height: 460px;
+    }
+
+    section .maps #map {
+        height: 300px;
+    }
+
+    section article.interna .thumb {
+        height: 250px;
+    }
+
+    .vereadores-posts ul.presidente-destaque {
+        grid-gap: 10px;
+    }
+
+    .vereadores-posts ul.presidente-destaque {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .vereadores-posts ul.presidente-destaque li.principal a .img-vereador {
+        height: 259px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    header .container .busca-acesso .container_form {
+        padding-left: 0;
+    }
+
+    section .card .linha {
+        flex-direction: column;
+    }
+
+    section .card.card-profile .imagem {
+        align-self: center;
+    }
+
+    section .card .buttons-secretarias .button {
+        padding: 20px 15px;
+    }
+
+    section .card .buttons-secretarias .button a, section .card .buttons-secretarias .button {
+        font-size: 13px;
+    }
+
+    footer h3 {
+        padding-left: 0;
+    }
+
+    .vereadores-posts ul {
+        justify-content: space-between;
+    }
+
+    .vereadores-posts ul::after {
+        content: none;
+    }
+
+    .vereadores-posts ul li:nth-child(5n) {
+        margin: 0 5px 20px 5px;
+    }
+
+    .vereadores-posts ul li {
+        display: flex;
+        flex: 1;
+        margin: 0 5px 20px 5px;
+        min-width: 104.4px;
+        max-width: 120.4px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    #ng-integracao-acessibilidade {
+        display: none;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header ul.acessibilidade {
+        margin: 15px 0;
+        text-align: center;
+        float: none;
+        display: block;
+    }
+
+    header ul.acessibilidade li {
+        float: none;
+        display: inline-block;
+    }
+
+    header img.logo {
+        float: none;
+        margin: 12px auto 0;
+    }
+
+    section aside {
+        -webkit-border-top-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius-topleft: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 8px;
+        -webkit-border-bottom-left-radius: 8px;
+        -moz-border-radius-bottomright: 8px;
+        -moz-border-radius-bottomleft: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    footer h3 {
+        padding: 0 0 30px;
+    }
+
+    header ul.acessibilidade li {
+        padding: 0 0 0 10px;
+    }
+
+    section .card {
+        margin-left: 0;
+        width: 100%;
+        float: none;
+    }
+
+    .vereadores-posts ul.presidente-destaque li.principal a .img-vereador {
+        height: 246px;
+    }
+
+    .vereadores-posts ul.presidente-destaque {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width: 500px) {
+    #lightbox .btn_fechar {
+        width: 25px;
+        height: 25px;
+        right: -21px;
+        top: -23px;
+    }
+
+    section .card .buttons-secretarias {
+        flex-direction: column;
+    }
+
+    section .card .buttons-secretarias .button {
+        margin-right: 0;
+    }
+
+    section .card .buttons-secretarias .button:first-child {
+        margin-bottom: 10px;
+    }
+
+    section #banners {
+        height: 110px;
+    }
+
+    section .avisos .aviso {
+        width: calc(100% - 10px);
+    }
+
+    section .mural .nav_mural {
+        position: relative;
+        right: auto;
+        margin: 0 0 20px;
+        height: 22px;
+        width: 88px;
+    }
+
+    section .mural .nav_mural .arrow {
+        margin: 0 20px 0 0;
+    }
+
+    section .noticias h2 a.right {
+        float: none;
+    }
+
+    section article.interna .thumb {
+        height: 200px;
+    }
+
+    section article.interna .thumb span {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    section article.interna img {
+        margin: 0 0 10px;
+    }
+
+    .vereadores-posts ul.presidente-destaque {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/***** Altura *****/
+@media (max-width: 400px) {
+    header {
+        padding-bottom: 15px;
+    }
+
+    header #form_pesquisar {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header #acessoainformacao {
+        width: 100%;
+    }
+
+    .vereadores-posts ul.presidente-destaque {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

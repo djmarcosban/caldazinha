@@ -1,0 +1,122 @@
+body{background: #f3f7f8 !important;}
+
+section .avisos .aviso span,
+section .noticias span,
+#mais_noticias .noticia span,
+section .noticias h2 a,
+section .maps .info h3,
+footer h4,
+footer h3,
+.color-primary,
+#share a,
+section .links a.icon:before {
+    color: #333 !important;
+}
+ /*************** SEARCH ***************/
+article.interna .filtros .filtro {
+    color: #1d4e60 !important;
+    border-color: #1d4e60 !important;
+}
+article.interna .filtros .filtro:hover {
+    background-color: #1d4e60 !important;;
+    color: white !important;
+}
+article.interna .filtros .filtro.active {
+    background-color: #1d4e60 !important;;
+    color: white !important;
+}
+article.interna .box-result .type {
+    color: #1d4e60 !important;
+}
+ /*************** SEARCH ***************/
+section .maps .info h3,
+footer h4:after,
+.wp-paginate .current,
+.wp-paginate a {
+    border-color: #1d4e60 !important;
+}
+form#form_filter,
+.wp-paginate .current,
+.wp-paginate a:hover {
+    background: #1d4e60 !important;
+}
+section .mural {
+    background: #e0cb98 !important;
+}
+section .mural h2,
+section .mural .nav_mural .arrow i {
+    color: #ffffff !important;
+}
+section aside,
+section .card {
+    background: #4c8843 !important;
+}
+section aside h4,
+section aside li.menu-item-has-children a:after {
+    color: #7ddf6d !important;
+    border-color: #7ddf6d !important;
+}
+.search h1.aba_search {
+    color: #2ea9ae !important;
+}
+section article.interna .thumb span:before {
+    background: #2ea9ae !important;
+}
+section aside li.menu-item-has-children span {
+    color: #7ddf6d !important;
+}
+section aside a:hover,
+section aside .active a,
+section aside .current-menu-item a,
+section aside .current-menu-parent a,
+section .card .texto p {
+    color: #ffffff !important;
+}
+.display .blocoacesso .containertransparencia {
+    background-color: #ffffff !important;
+}
+.display .blocoacesso .triangulo {
+    border-color: transparent transparent #ffffff transparent !important;
+}
+.display .blocoacesso .containertransparencia .a_i .col_ai .title:first-child,
+.display .blocoacesso .containertransparencia h1,
+.display .blocoacesso .containertransparencia .a_i .col_ai .item.title,
+.display .blocoacesso .containertransparencia .a_i .col_ai .title {
+    color: #48556a !important;
+}
+.display .blocoacesso .containertransparencia .a_i .col_ai .item {
+    color: #3d474f !important;
+}
+section .card.card-profile .texto .requerimentos {
+    background-color: #264f6e !important;
+    color: #2ea9ae !important;
+    font-size: 16px;
+}
+section .card .buttons-secretarias .button:hover {
+    background-color: transparent !important;
+    color: #264f6e !important;
+    border: 1px solid #264f6e !important;
+}
+section .card .buttons-secretarias .button a {
+    color: #2ea9ae !important;
+}
+section .card .buttons-secretarias .button:hover a {
+    color: #264f6e !important;
+}
+section .card .buttons-secretarias .button.ativo a {
+    color: #264f6e !important;
+}
+section .card .buttons-secretarias .button.ativo {
+    background-color: transparent !important;
+    color: #264f6e !important;
+    border: 1px solid #264f6e !important;
+}
+section .card .buttons-secretarias .button {
+    background-color: #264f6e !important;
+    color: #2ea9ae !important;
+}
+article.interna [departamentos-container] [setinha].icon-up-arrow::before {
+    color: #264f6e !important;
+}
+section aside a{color: #fff !important}
+        
