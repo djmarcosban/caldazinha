@@ -102,7 +102,7 @@
                 <a target="_blank" rel="noopener noreferrer" href="https://caldazinha.megasoftservicos.com.br/servidor/login?returnUrl=%2Fservidor%2Fconsultar-contracheque">Contracheque</a>
               </li>
               <li id="menu-item-438" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-438">
-                <a target="_blank" rel="noopener noreferrer" href="<?php echo BASE;?>webmail">Webmail</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://caldazinha.go.gov.br/webmail">Webmail</a>
               </li>
               <li id="menu-item-586" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-586">
                 <a target="_blank" rel="noopener noreferrer" href="https://caldazinha.megasoftarrecadanet.com.br/caldazinha/nfe-municipal/login.jsf">Nota Fiscal Eletrônica</a>
