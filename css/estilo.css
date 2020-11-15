@@ -1,0 +1,161 @@
+#ng-integracao-acessibilidade {
+    padding: 6px 0;
+}
+
+#ng-integracao-acessibilidade > div {
+ margin: 0 auto;
+}
+
+#ng-integracao-acessibilidade section {
+    display: flex;
+    float: right;
+    margin: 0 10px;
+    width: auto;
+}
+
+#ng-integracao-acessibilidade section:first-child {
+    float: left;
+}
+
+#ng-integracao-acessibilidade span.font {
+    font-weight: bold;
+    color: rgb(72, 85, 106);
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0 5px;
+    margin: 0 1px;
+    background: rgba(255, 255, 255, 0.4);
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+#ng-integracao-acessibilidade span.font.fontDefault {
+    padding: 0 7px;
+}
+
+#ng-integracao-acessibilidade span.text {
+    color: rgb(72, 85, 106);
+    font-size: 0.9rem;
+    margin-right: 6px;
+}
+
+#ng-integracao-acessibilidade span.font:hover {
+    text-decoration: underline;
+}
+
+#ng-integracao-acessibilidade section .link {
+    font-size: 0.9rem;
+    color: rgb(72, 85, 106);
+    cursor: pointer;
+    position: initial !important;
+    display: flex;
+}
+
+#ng-integracao-acessibilidade section .link:hover {
+    text-decoration: underline;
+}
+
+#ng-integracao-acessibilidade section .link .icone {
+    width: 15px;
+    height: auto;
+    float: left;
+    margin-right: 3px;
+    display: flex !important;
+    align-items: center;
+}
+
+#ng-integracao-acessibilidade section .link .icone svg {
+    width: 15px;
+    fill: rgb(72, 85, 106);
+}
+
+#ng-integracao-fale-conosco form {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#ng-integracao-fale-conosco form span {
+    margin-bottom: 30px;
+    color: rgb(34, 34, 34);
+}
+
+#ng-integracao-fale-conosco form input,
+#ng-integracao-fale-conosco form textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding: 15px 20px;
+    line-height: 16px;
+    margin: 0 0 10px;
+    border: 1px solidrgb(206, 212, 218);
+    color: rgb(34, 34, 34);
+    font-size: 1rem;
+}
+
+#ng-integracao-fale-conosco form input[type=submit] {
+    width: 100%;
+    background-color: #f67428;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.143rem;
+}
+
+#ng-integracao-lista-paginas {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+#ng-integracao-lista-paginas a.link {
+    position: initial !important;
+}
+
+#ng-integracao-lista-paginas a.link:hover {
+    text-decoration: underline;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#page-adm-boletim-coronavirus {
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all;
+}
+
+#page-adm-boletim-coronavirus .loader-page-covid {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #b2b2b2;
+    border-radius: 50%;
+    border-bottom-color: #e3e3e3;
+    animation: spin 1s linear infinite;
+}

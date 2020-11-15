@@ -543,7 +543,7 @@ section .noticias span, #mais_noticias .noticia span {
 }
 
 section .noticias h3, #mais_noticias .noticia h4 {
-    color: #333;
+    color: #48556a;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -552,7 +552,7 @@ section .noticias h3, #mais_noticias .noticia h4 {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 section .noticias .destaque h3 {

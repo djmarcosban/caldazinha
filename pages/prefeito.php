@@ -1,0 +1,45 @@
+<?php
+$id = 1;
+
+try{
+	$secs = $sql->prepare("SELECT * FROM m_prefeito WHERE id = ? ORDER BY id DESC");
+	$secs->bindParam(1, $id, PDO::PARAM_STR);
+	$secs->execute(); 
+}catch(PDOException $e){
+	echo $e->getMessage();
+}
+
+$rowSecs = $secs->fetchObject();
+?>
+
+<style type="text/css" media="screen">
+section .card .texto p{
+	color: #48556a!important;
+}
+</style>
+
+<article class="interna">
+	<h2 class="titulo">Estrutura organizacional</h2>
+	<div class="card card-profile flex-column secretarias" style="width: 100%;">
+		<div class="linha">
+			<div class="imagem" style="background: url(https://caldazinha.go.gov.br/<?php echo $rowSecs->foto;?>) center center no-repeat;background-size:cover;"></div>
+			<div class="texto">
+				<h3>Gabinete do Prefeito</h3>
+				<div class="field_item_institucional">
+					<strong>Prefeito:</strong> <?php echo $rowSecs->nome;?>
+				</div>
+				<div class="field_item_institucional">
+					<strong>Telefones:</strong> <?php echo $rowSecs->telefone1;?> - <?php echo $rowSecs->telefone2;?>
+				</div>
+				<div class="field_item_institucional">
+					<strong>Ramal:</strong> <?php echo $rowSecs->ramal;?>
+				</div>
+				<div class="field_item_institucional">
+					<strong>E-mail:</strong> <?php echo $rowSecs->email;?>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="competencia"><h3>Competências</h3><p style="text-align: justify; "><b>Lei Orgânica - Art. 71</b> – Ao Prefeito, como chefe da administração, compete dar cumprimento às deliberações da Câmara, dirigir, fiscalizar e defender os interesses do Município, bem como adotar, de acordo com a Lei, todas as medidas administrativas de utilidade pública, sem exceder as verbas orçamentárias.&nbsp;</p><p style="text-align: justify; ">&nbsp;</p><p style="text-align: justify; "><b>Art. 72</b> – Compete ao Prefeito, entre outras atribuições;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> I – a iniciativa das leis, na forma e caos previstos nesta Lei Orgânica; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">II - representar o Município em juízo e fora da dele; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">III – sancionar, promulgar e fazer publicar as leis aprovadas pela Câmara e expedir os regulamentos para sua fiel execução;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> IV – vetar, no todo ou em parte, aos projetos de leis aprovadas pela Câmara;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> V – decretar, nos termos da lei, a desapropriação por necessidade ou utilidade pública, ou por interesse social;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> VI – expedir decretos, portarias e outros atos administrativos; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">VII – permitir com autorização do Legislativo o uso dos bens Municipais por terceiros, salvo no caso de interesse público relevante;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> VIII – permitir ou autorizar a execução de serviços públicos, por terceiros; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">IX – prover os cargos públicos e expedir os demais atos referentes à situação funcional dos servidores; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">X – enviar à Câmara os projetos de lei relativos ao orçamento anual e ao plano plurianual do Município e das suas autarquias;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XI – encaminhar a Câmara, até 15 de abril, a prestação de contas, bem como balanços do exercício findo; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XII – encaminhar aos órgãos competentes os planos de aplicação e as prestações de contas exigidas em lei;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XIII – fazer e publicar os atos oficiais; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XIV – prestar à Câmara, dentro de quinze (15) dias, as informações pela mesma solicitada, salvo prorrogação, a seu pedido e por prazo determinado, em face da complexidade da matéria ou da dificuldade de obtenção nas respectivas fontes, dos dados pleiteados;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XV – prover os serviços e obras da administração pública; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XVI – superintender a arrecadação dos tributos, bem como a guarda e aplicação da receita, autorizando as despesas e pagamentos dentro das disponibilidades orçamentárias ou dos créditos votados pela Câmara;&nbsp;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XVII – colocar a disposição da Câmara, até o dia vinte de cada mês, o duodécimo de sua dotação orçamentária, nos termos da lei complementar prevista no artigo 165, parágrafo da Constituição da República;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XVIII – aplicar multas previstas em leis e contratos, bem como revê-las quando impostas irregularmente;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XIX – resolver sobre os requerimentos, reclamações ou representações que lhe forem dirigidas; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XX – oficializar, obedecidas às normas urbanísticas aplicáveis, as vias e logradouros públicos mediante denominação aprovada pela Câmara;&nbsp;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXI – convocar extraordinariamente a Câmara quando o interesse da administração&nbsp;<span style="font-size: 1rem;">exigir;&nbsp;</span></p><p style="text-align: justify; "><span style="font-size: 1rem;"><br></span></p><p style="text-align: justify; ">XXII – aprovar projetos de edificações e planos de edificações e planos de loteamento, arruamento e zoneamento para fins urbanos, observando sempre a continuação de ruas e avenidas existentes; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXIII – apresentar, anualmente, a Câmara, relatório circunstanciado sobre o estado das obras e dos serviços municipais, bem assim o programa da administração para o ano seguinte; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXIV – organizar os serviços internos das repartições criadas por lei, sem exceder as verbas para tal destinada;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XXV – contrair empréstimos e realizar operações de crédito, mediante prévia autorização da Câmara; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXVI – providenciar a administração dos bens do Município e sua alienação, na forma da Lei;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XXVII – organizar e dirigir, nos termos da lei, os serviços às terras do Município; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXVIII – desenvolver o sistema viário do Município;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XXIX – conceder auxílios, prêmios e subvenções, nos limites das respectivas verbas orçamentárias e do plano de distribuição, prévia e anualmente aprovado pela Câmara; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXX – providenciar sobre o enchimento do ensino;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XXXI – estabelecer a divisão administrativa do Município, de acordo com a lei;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; "> XXXII – solicitar o auxílio das autoridades policiais do Estado para garantia do cumprimento de seus atos; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXXIII – solicitar, obrigatoriamente, autorização à Câmara para ausentar-se do Município por tempo superior a quinze (15) dias; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXXIV – adotar providências para a conservação e salvaguarda do patrimônio municipal; </p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">XXXV – publicar, até trinta (30) dias após o encerramento de cada bimestre, relatório resumido da execução orçamentária.&nbsp;</p><p style="text-align: justify; ">&nbsp;</p><p style="text-align: justify; "><b>Art. 73 </b>– O Prefeito poderá delegar, por decreto, a seus auxiliares, as funções administrativas previstas nos incisos XVI, XVII, XIX, do artigo 72, desta Lei Orgânica.&nbsp;</p></div>
+</article>

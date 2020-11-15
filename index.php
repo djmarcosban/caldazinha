@@ -1,5 +1,6 @@
 <?php
 require('includes/config.php');
+require('includes/id_pagina.php');
 ?>
 
 <!DOCTYPE html>
@@ -7,6 +8,7 @@ require('includes/config.php');
 <head>
   <title>Caldazinha | Prefeitura Municipal</title>
   <meta charset="UTF-8"/>
+  <base href="<?php echo BASE;?>">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"/>
   <meta content="Site Oficial da Prefeitura de Caldazinha" name="description">
@@ -15,7 +17,7 @@ require('includes/config.php');
   <meta property="og:image" content="https://caldazinha.go.gov.br/img/banner_logo.png"/>
   <meta property="og:url" content="https://caldazinha.go.gov.br/"/>
   <meta property="og:site_name" content="Caldazinha | Prefeitura Municipal"/>
-  <link rel="icon" type="image/png" href=""/>
+  <link rel="icon" href="https://www.caldazinha.go.gov.br/img/favicon.png" sizes="32x32"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css"/>
@@ -46,7 +48,7 @@ require('includes/config.php');
         <div class="row pai-cont-img" id="ng-integracao-acessibilidade"></div>
         <div class="row pai-cont-img">
           <div class="col-12 col-md-5 col-lg-7 pai-img">
-            <a href="https://turvelandia.go.gov.br/">
+            <a href="<?php echo BASE;?>">
               <img src="images/banner_logo.png" style="height: 120px" alt="Caldazinha | Prefeitura Municipal" class="logo img-fluid"/>
             </a>
           </div>
@@ -70,7 +72,7 @@ require('includes/config.php');
     </header>
 
     <div class="container">
-      <section class="row">
+      <section id="<?php echo $idPagina;?>" class="row">
         <div class="col-12 col-md-9 order-md-2">
           <?php
           if(isset($_GET["go"]) && $_GET["go"] == "" OR !isset($_GET["go"])){
@@ -104,11 +106,11 @@ require('includes/config.php');
     corBtn: '#1d4e60',
     //Cor do botão do formulário
     //Link de acessibilidade
-    linkAcessibilidade: "./acessibilidade/",
+    linkAcessibilidade: "./acessibilidade",
     linkMapaSite: "./mapa-do-site",
     //Ação para atalho de acessibilidade
     pgAcessibilidade: function () {
-        window.location = "./acessibilidade/";
+        window.location = "./acessibilidade";
     },
     pgPrincipal: function () {
         window.location = "./";

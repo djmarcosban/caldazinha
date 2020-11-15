@@ -7,8 +7,8 @@
           <span class="cont">
             <span class="cont-img">
               <div class="btn_fechar"></div>
-              <a href="https://turvelandia.go.gov.br/2020/10/06/cadastro-cultural/" target="">
-                <img src="https://turvelandia.go.gov.br/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-06-at-16.28.42-1.jpeg" alt="">
+              <a href="#" target="">
+                <img src="#" alt="">
               </a>
               </span>
           </span>
@@ -17,8 +17,8 @@
           <span class="cont">
             <span class="cont-img">
               <div class="btn_fechar"></div>
-              <a href="https://turvelandia.go.gov.br/coronavirus/" target="_blank">
-                <img src="https://turvelandia.go.gov.br/wp-content/uploads/2020/05/2883398_resize_1000_-e1590600566966.png" alt="">
+              <a href="#" target="_blank">
+                <img src="#" alt="">
               </a>
             </span>
           </span>

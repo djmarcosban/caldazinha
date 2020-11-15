@@ -35,9 +35,9 @@ $(function () {
     });
 
 
-    $('#form_filter select').on('change', function () {
-        $('#form_filter').submit();
-    });
+    //$('#form_filter select').on('change', function () {
+    //    $('#form_filter').submit();
+    //});
 
 
     $('section aside li.menu-item-has-children').each(function (i, v) {

@@ -53,9 +53,21 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 #(.*)$
 
 RewriteRule ^$ index.php?go=inicio
+RewriteRule ^fale-conosco$ index.php?go=fale-conosco
+RewriteRule ^sic-fisico$ index.php?go=sic-fisico
+RewriteRule ^telefones-uteis$ index.php?go=telefones-uteis
+RewriteRule ^valor-da-terra-nua-vtn$ index.php?go=valor-da-terra-nua-vtn
+RewriteRule ^estrutura-organizacional/([0-9_-]+)$ index.php?go=estrutura-organizacional&id=$1
+RewriteRule ^prefeito$ index.php?go=prefeito
+RewriteRule ^vice-prefeito$ index.php?go=vice-prefeito
+RewriteRule ^primeira-dama$ index.php?go=primeira-dama
 RewriteRule ^inicio$ index.php?go=inicio
-RewriteRule ^noticia/(.*)$ index.php?go=ler-noticia&alias=$1
-
-#CRIAR ANUNCIO
+RewriteRule ^historia$ index.php?go=historia
+RewriteRule ^localizacao$ index.php?go=localizacao
+RewriteRule ^acessibilidade$ index.php?go=acessibilidade
+RewriteRule ^mapa-do-site$ index.php?go=mapa-do-site
+RewriteRule ^noticia/(.*)$ index.php?go=ler-noticia&id=$1
+RewriteRule ^noticias$ index.php?go=noticias
+RewriteRule ^noticias/categoria/([0-9_-]+)/([A-Za-z]+)$ index.php?go=noticias&categoria=$1&ordem=$2
 
 </IfModule>

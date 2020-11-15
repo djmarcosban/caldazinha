@@ -107,8 +107,8 @@ var acessibilidade_text = '<article style="text-align: justify">\
     }) : "undefined" != typeof exports ? exports.cookie = c : window.cookie = c
 }("undefined" == typeof document ? null : document);
 window.integracao = function (data) {
-    const BASE = "https://api.nucleogov.com.br/integracaosites/";
-    // const BASE = "http://localhost/integracaosites/";
+    //const BASE = "https://api.nucleogov.com.br/integracaosites/";
+    const BASE = "https://localhost/caldazinha/wordpress/";
 
     var view_acessibilidade = document.querySelectorAll("#ng-integracao-acessibilidade"),
         view_pagina_acessibilidade = document.querySelectorAll("#ng-integracao-pagina-acessibilidade"),
@@ -220,7 +220,7 @@ window.integracao = function (data) {
             var link = document.createElement('link');
             link.type = 'text/css';
             link.rel = 'stylesheet';
-            link.href = BASE + 'estilo.css?dados=' + JSON.stringify(data).replace(/#/g, '%23');
+            link.href = BASE + 'css/estilo.css?dados=' + JSON.stringify(data).replace(/#/g, '%23');
 
             document.querySelector("head").append(link);
         },
@@ -538,11 +538,12 @@ window.integracao = function (data) {
 
                     view_fale[0].querySelectorAll("form input[type=submit]")[0].value = "Enviando...";
 
-                    if (sendForm == true) {
+                    if (sendForm == true){
                         sendForm = false;
-                        ajax(BASE + "request.php", formdata, function (responseText) {
+                        ajax(BASE + "func/request.php", formdata, function (responseText) {
                             sendForm = true;
                             view_fale[0].querySelectorAll("form input[type=submit]")[0].value = "Enviar";
+
                             if (parseInt(responseText) == 1) {
                                 alert("Mensagem enviada!");
                                 view_fale[0].querySelectorAll("form input[name=nome]")[0].value = "";
@@ -612,7 +613,7 @@ window.integracao = function (data) {
 
         htmlFaleConosco = function () {
             return '<form method="post">\
-            <span>*Envie nos uma mensagem utilizando o formulÃ¡rio abaixo:</span>\
+            <span>*Envie nos uma mensagem utilizando o formulário abaixo:</span>\
                         <input type="text" name="nome" placeholder="Nome" required/>\
                         <input type="email" name="email" placeholder="E-mail" required/>\
                         <input type="text" name="fone" placeholder="Telefone"/>\

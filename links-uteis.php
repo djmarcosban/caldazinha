@@ -6,8 +6,8 @@
               <a href="cntreceitas" class="icon icon-new-database" target="_blank"><span>Receitas</span></a>
               <a href="cntdespesas" class="icon icon-remove-database" target="_blank"><span>Despesas</span></a>
               <a href="cntservidores" class="icon icon-users" target="_blank"><span>Pessoal</span></a>
-              <a href="sic" class="icon icon-information" target="_blank"><span>e-Sic</span></a>
-              <a href="leis" class="icon icon-scale" target="_blank"><span>Legisação</span></a>
+              <a href="http://caldazinha.megasofttransparencia.com.br/e-sic/adm/index.xhtml" class="icon icon-information" target="_blank"><span>e-Sic</span></a>
+              <a href="https://www.leismunicipais.com.br/prefeitura/go/caldazinha" class="icon icon-scale" target="_blank"><span>Legisação</span></a>
             </div>
 
 

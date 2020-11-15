@@ -1,0 +1,211 @@
+#contato .interna .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contato .interna .container:after {
+    content: none;
+}
+
+#contato .interna #ng-integracao-fale-conosco form {
+    padding: 30px !important;
+}
+
+#contato .interna .bloco {
+    width: 340px;
+    min-height: 430px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .1);
+}
+
+#contato .interna .bloco:first-child,
+#contato .interna .bloco:nth-child(3) {
+    margin-left: 0;
+}
+
+#contato .interna .bloco .foto {
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+#contato .interna .bloco:first-child .foto {
+    background: url("../images/contato.jpg") center / cover no-repeat;
+}
+
+#contato .interna .bloco:last-child .foto {
+    background: url("../images/sociais.jpg") center / cover no-repeat;
+}
+
+#contato .interna .bloco .box {
+    width: 100%;
+    float: left;
+    padding: 28px 46px;
+}
+
+#contato .interna .bloco .box button:first-child {
+    margin-top: 18px;
+}
+
+#contato .interna .bloco .box button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px;
+    color: #c6c6c6;
+    background: #ffffff;
+    box-shadow: 9px 7px 5px -7px rgba(0, 0, 0, 0.29);
+    font-size: 0.8571rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#contato .interna .bloco .box button:hover {
+    border: 1px solid #ffffff;
+    color: #0b2c56;
+    background: transparent;
+}
+
+#contato .interna .bloco .box h2 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 26px;
+    color: RGB(77, 77, 76);
+}
+
+#contato .interna .bloco:not(:first-child) .box a {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#contato .interna .bloco:not(:first-child) .box a {
+    margin-bottom: 5px;
+}
+
+#contato .interna .bloco:not(:first-child) .box a:hover {
+    color: #0b67cd;
+}
+
+#contato .interna .bloco:not(:first-child) .box a:hover p {
+    text-decoration: underline;
+}
+
+#contato .interna .bloco:not(:first-child) .box a .icone {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#contato .interna .bloco:not(:first-child) .box a .icone:before {
+    font-size: 18px;
+}
+
+#contato .interna .bloco:not(:first-child) .box a .icone.icone-youtube:before {
+    color: #FF0000;
+}
+
+#contato .interna .bloco:not(:first-child) .box a .icone.icone-facebook:before {
+    color: #324C82;
+}
+
+#contato .interna .bloco:not(:first-child) .box a .icone.icone-instagram:before {
+    color: #C42D9E;
+}
+
+#contato .interna .bloco:not(:first-child) .box a .icone.icone-twitter:before {
+    color: #0096CE;
+}
+
+#contato .interna .bloco .box p {
+    font-size: 1rem !important;
+    text-align: left;
+    margin: 0;
+}
+
+#contato .interna .bloco:first-child .box p.email {
+    word-break: break-all;
+}
+
+#contato .interna .bloco .box p * {
+    font-size: 1rem !important;
+}
+
+#contato .interna .bloco form {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#contato .interna .bloco form span {
+    margin-bottom: 30px;
+    color: rgb(34, 34, 34);
+}
+
+#contato .interna .bloco form input,
+#contato .interna .bloco form textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding: 15px 20px;
+    line-height: 16px;
+    margin: 0 0 10px;
+    border: 1px solid rgb(206, 212, 218);
+    color: rgb(34, 34, 34);
+    font-size: 1rem;
+}
+
+#contato .interna .bloco form input[type=submit] {
+    width: 100%;
+    background-color: rgb(135, 195, 249);
+    color: white;
+    font-weight: 600;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.143rem;
+}
+
+@media all and (max-width: 991px) {
+
+    #contato .interna .container .bloco {
+        margin-left: 0;
+    }
+}
+
+
+#contato .interna .bloco form input[type="submit"] {
+    background-color: #19408e !important;
+    color: #b2d134 !important;
+}
+
+#contato .interna .bloco .box button {
+    background-color: #19408e !important;
+    color: #b2d134 !important;
+}
+#contato .interna .bloco form input[type="submit"]:hover,
+#contato .interna .bloco .box button:hover {
+    background-color: transparent !important;
+    color: #19408e !important;
+    border: 1px solid #19408e !important;
+}
+
