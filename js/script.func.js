@@ -107,8 +107,8 @@ var acessibilidade_text = '<article style="text-align: justify">\
     }) : "undefined" != typeof exports ? exports.cookie = c : window.cookie = c
 }("undefined" == typeof document ? null : document);
 window.integracao = function (data) {
-    //const BASE = "https://caldazinha.go.gov.br/v3/";
-    const BASE = "https://localhost/caldazinha/wordpress/";
+    const BASE = "https://caldazinha.go.gov.br/v3/";
+    //const BASE = "https://localhost/caldazinha/wordpress/";
 
     var view_acessibilidade = document.querySelectorAll("#ng-integracao-acessibilidade"),
         view_pagina_acessibilidade = document.querySelectorAll("#ng-integracao-pagina-acessibilidade"),
